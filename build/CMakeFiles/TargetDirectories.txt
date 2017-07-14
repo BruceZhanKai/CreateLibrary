@@ -1,0 +1,4 @@
+/home/bruce/test-1/build/CMakeFiles/edit_cache.dir
+/home/bruce/test-1/build/CMakeFiles/rebuild_cache.dir
+/home/bruce/test-1/build/CMakeFiles/Hello.dir
+/home/bruce/test-1/build/CMakeFiles/Test.dir

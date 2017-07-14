@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bruce/test-1/build/include/libTest.hpp
+dirent.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+errno.h
+-
+stdio.h
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+dirent.h
+-
+unistd.h
+-
+string.h
+-
+
+/home/bruce/test-1/build/libTest.cpp
+include/libTest.hpp
+/home/bruce/test-1/build/include/libTest.hpp
+

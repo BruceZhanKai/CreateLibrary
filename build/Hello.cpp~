@@ -1,0 +1,8 @@
+#include "include/libTest.hpp"
+
+int main()
+{
+	test tessst;
+	tessst.hello();
+	return 0;
+}
