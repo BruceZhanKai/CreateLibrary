@@ -1,0 +1,50 @@
+
+### add new user in my ubuntu
+$ sudo adduser joshua
+
+### openssh
+#if could not find the file which path is "/etc/ssh/sshd_config"
+$ sudo apt-get install openssh-server
+
+### edit /etc/ssh/sshd_config
+$ sudo gedit /etc/ssh/sshd_config
+# add "AllowUsers joshua"
+
+### edit /etc/hosts.allow
+$ sudo gedit /etc/hosts.allow
+# add "ALL: 10.2.137.255"
+
+### restart ssh
+$ sudo /etc/init.d/ssh restart
+
+### do scp
+$ sudo scp /home/bruce/20170613_libDetection/build/20170801-1_libDetection.tar bruce@10.2.137.62:/home/bruce/
+
+________________________________
+
+$ ls *0057944219*
+________________________________
+
+### do tar
+$ tar cvf 20170801-1_libDetection.tar tarfolder
+> tarfolder/
+> tarfolder/libDetection.h
+> tarfolder/liblibDetection.so
+$ tar xvf 20170801-1_libDetection.tar
+> tarfolder/
+> tarfolder/libDetection.h
+> tarfolder/liblibDetection.so
+
+### uninstall Qt 5.6
+$ cd /home/bruce/Qt5.6
+$ ./MaintenanceTool
+
+### install Qt 5.8.0
+$ chmod 755 qt-opensource-linux-x64-5.8.0.run
+$ sudo ./qt-opensource-linux-x64-5.8.0.run 
+
+
+
+
+
+

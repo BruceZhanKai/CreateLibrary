@@ -1,0 +1,46 @@
+***ISSUE1********************************************************************************************
+
+This application failed to start because it could not find or load the Qt platform plugin "xcb"
+in "".
+
+Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, xcb.
+
+Reinstalling the application may fix this problem.
+./Execute.sh: line 17: 23406 Aborted                 (core dumped) ./LocalFaceDetector
+
+***SOLVE1********************************************************************************************
+
+maybe is qt version problem
+
+$ ldd LocalFaceDetector
+
+libQt5Widgets.so.5 => ./libQt/libQt5Widgets.so.5 (0x00007f9659ffa000)
+libQt5Gui.so.5 => ./libQt/libQt5Gui.so.5 (0x00007f965985f000)
+libQt5Core.so.5 => ./libQt/libQt5Core.so.5 (0x00007f965913e000)
+
+libQt5Widgets.so.5 => /home/bruce/Qt5.6.1/5.6/gcc_64/lib/libQt5Widgets.so.5 (0x00007fd82e7f9000)
+libQt5Gui.so.5 => /home/bruce/Qt5.6.1/5.6/gcc_64/lib/libQt5Gui.so.5 (0x00007fd82e001000)
+libQt5Core.so.5 => /home/bruce/Qt5.6.1/5.6/gcc_64/lib/libQt5Core.so.5 (0x00007fd82d8ec000)
+
+****************************************************************************************************
+****************************************************************************************************
+
+***ISSUE2********************************************************************************************
+
+:-1: warning: The build directory needs to be at the same level as the source directory.
+:-1: error: cannot find -lpulse-mainloop-glib
+:-1: error: cannot find -lpulse
+:-1: error: collect2: error: ld returned 1 exit status
+
+***SOLVE2********************************************************************************************
+
+$ sudo apt-get install libpulse-dev
+
+
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
+****************************************************************************************************
