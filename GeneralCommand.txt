@@ -17,7 +17,7 @@ $ sudo gedit /etc/hosts.allow
 ### restart ssh
 $ sudo /etc/init.d/ssh restart
 
-### do scp
+### do scp to joshua pc 's bruce 
 $ sudo scp /home/bruce/20170613_libDetection/build/20170801-1_libDetection.tar bruce@10.2.137.62:/home/bruce/
 
 ________________________________
@@ -43,8 +43,9 @@ $ ./MaintenanceTool
 $ chmod 755 qt-opensource-linux-x64-5.8.0.run
 $ sudo ./qt-opensource-linux-x64-5.8.0.run 
 
+$ git remote set-url origin ssh://user@172.21.39.40/var/git/FaceRecogSys
+$ git remote add origin ssh://user@172.21.39.40/var/git/FaceRecogSys
 
-
-
+$ ffmpeg -i test.mp4 -vf transpose=1 ids-cam-demo-1.mp4
 
 
