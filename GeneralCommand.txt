@@ -48,4 +48,8 @@ $ git remote add origin ssh://user@172.21.39.40/var/git/FaceRecogSys
 
 $ ffmpeg -i test.mp4 -vf transpose=1 ids-cam-demo-1.mp4
 
+$ chown -R user ./*
+
+$ chgrp user -R ./*
+
 
