@@ -1,18 +1,21 @@
+ssh from SERVER to CLIENT 
 
-### add new user in my ubuntu
+
+### add new user in SERVER ubuntu
 $ sudo adduser joshua
+_________________________________
 
-### openssh
+### openssh in CLIENT ubuntu
 #if could not find the file which path is "/etc/ssh/sshd_config"
 $ sudo apt-get install openssh-server
 
 ### edit /etc/ssh/sshd_config
 $ sudo gedit /etc/ssh/sshd_config
-# add "AllowUsers joshua"
+# add CLIENT user name "AllowUsers joshua"
 
 ### edit /etc/hosts.allow
 $ sudo gedit /etc/hosts.allow
-# add "ALL: 10.2.137.255"
+# add SERVER ip "ALL: 10.2.137.255"
 
 ### restart ssh
 $ sudo /etc/init.d/ssh restart
