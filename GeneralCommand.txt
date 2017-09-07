@@ -55,4 +55,10 @@ $ chown -R user ./*
 
 $ chgrp user -R ./*
 
+### check image
+$ eog image.jpg
+
+### open window
+$ nautilus
+
 
