@@ -46,6 +46,7 @@ $ ./MaintenanceTool
 $ chmod 755 qt-opensource-linux-x64-5.8.0.run
 $ sudo ./qt-opensource-linux-x64-5.8.0.run 
 
+$ git init
 $ git remote set-url origin ssh://user@172.21.39.40/var/git/FaceRecogSys
 $ git remote add origin ssh://user@172.21.39.40/var/git/FaceRecogSys
 
