@@ -38,6 +38,15 @@ $ tar xvf 20170801-1_libDetection.tar
 > tarfolder/libDetection.h
 > tarfolder/liblibDetection.so
 
+### do tar.gz
+$ tar  -zcvf   压缩文件名.tar.gz   被压缩文件名
+$ tar  -zxvf   压缩文件名.tar.gz
+
+### do 7z
+$ sudo apt-get install p7zip-full
+$ cat name.7z.00* > name.7z
+$ 7z x name.7z
+
 ### uninstall Qt 5.6
 $ cd /home/bruce/Qt5.6
 $ ./MaintenanceTool
